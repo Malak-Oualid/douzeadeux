@@ -1,18 +1,25 @@
+import "./styles/globals.css";
+import { ReactNode } from "react";
+import Head from "next/head";
 import Layout from "./components/layout";
-import "./globals.css";
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
-      <body>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <body className="body">
         <Layout>
         {children}
         </Layout>
-        </body>
+      </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
