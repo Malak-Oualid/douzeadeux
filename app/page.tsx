@@ -15,6 +15,7 @@ const Home: React.FC = () => {
     <img src="magazine.png" alt="what-is" />
     <img src="collage1.png" alt="deco" />
   </div>
+  <img src="people.png" alt="people" />
     </>
   );
 };
