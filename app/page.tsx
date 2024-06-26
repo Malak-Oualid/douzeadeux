@@ -4,16 +4,17 @@ import React from 'react';
 const Home: React.FC = () => {
   return (
     <>
-      <h1 className="heading">douze à deux</h1>
-      <img src="/IMG_demo1.jpeg" alt="kickoff" />
-      <div>
-        <Link href="https://lu.ma/calendar/manage/cal-PIrfoWlJDawpNDO/events">
-          <button className="buttons">Join a session</button> 
+      <h1 className="heading">Douze à Deux</h1>
+      <text className='subheading'>Where passion and friends come together</text>
+      <Link href="https://lu.ma/calendar/manage/cal-PIrfoWlJDawpNDO/events" className='buttons'>
+          Attend a session
         </Link>
-        <Link href="/pages/about">
-          <button className="buttons">The story</button> 
-        </Link>
-      </div>
+      <img src="landing.png" alt="kickoff" />
+      <img src="ripped.png" alt="style" />
+      <div className="image-container">
+    <img src="magazine.png" alt="what-is" />
+    <img src="collage1.png" alt="deco" />
+  </div>
     </>
   );
 };
